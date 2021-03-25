@@ -12,7 +12,7 @@ namespace DIO.Mvc.Models
         [Display(Name= "Descrição")]
         [Required(ErrorMessage = "O Campo Descrição é obrigatório.")]
         public string Descricao { get; set; }
-        [Display(Name= "Produtos")]
-        public List<Produto> _produtos { get; set; }
+        //[Display(Name= "Produtos")]
+        //public List<Produto> _produtos { get; set; }
     }
 }
