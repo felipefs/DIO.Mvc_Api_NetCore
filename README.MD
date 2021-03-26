@@ -15,6 +15,8 @@ dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
 dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Microsoft.Extensions.Logging.Debug
+dotnet add package Moq --version 4.16.1
+
 export PATH=$HOME/.dotnet/tools:$PATH
 
 https://docs.microsoft.com/pt-br/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-5.0&tabs=visual-studio-code

@@ -32,6 +32,7 @@ namespace DIO.Api.Controllers
         public async Task<ActionResult<Categoria>> GetCategoria(int id)
         {
             var categoria = await _context.Categorias.FindAsync(id);
+            
 
             if (categoria == null)
             {
@@ -51,7 +52,7 @@ namespace DIO.Api.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(categoria).State = EntityState.Modified;
+            _context.SetModified(categoria);
 
             try
             {

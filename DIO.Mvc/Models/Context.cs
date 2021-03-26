@@ -8,7 +8,10 @@ namespace DIO.Mvc.Models
 {
     public partial class Context : DbContext
     {
-       
+       public Context()
+       {
+           
+       }
         public Context(DbContextOptions<Context> options)
             : base(options)
         {
@@ -27,5 +30,9 @@ namespace DIO.Mvc.Models
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+        public virtual void SetModified(object entity){
+            Entry(entity).State = EntityState.Modified;
+        }
     }
 }
