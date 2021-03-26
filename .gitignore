@@ -2,3 +2,5 @@
 /DIO.Mvc/obj
 /DIO.Api/bin
 /DIO.Api/obj
+/DIO.xunit/bin
+/DIO.xunit/obj
